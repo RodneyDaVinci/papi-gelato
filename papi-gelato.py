@@ -11,8 +11,8 @@ def stap1():
     if aantal <= 3:
         stap2 = input(f"Wilt u deze {aantal} bolletje(s) in een hoorntje of een bakje? ")
     elif aantal <= 8:
-        print(f"Dan krijgt u van mij een bakje met {aantal} bolletjes")
-        stap1()
+        print(f"Dan krijgt u van mij een bakje met {aantal} bolletjes") 
+        exit()
     elif aantal > 8:
         print("Sorry, zulke grote bakken hebben we niet")
         stap1()
