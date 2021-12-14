@@ -15,10 +15,10 @@ def stap1():
     elif aantal > 8:
         print("Sorry, zulke grote bakken hebben we niet")
         stap1()
-    kies = input(f"Hier is uw {stap2} met {aantal} bolletje(s). Wilt u nog meer bestellen? (Y/N)")
-    if kies == 'Y':
+    keuze = input(f"Hier is uw {stap2} met {aantal} bolletje(s). Wilt u nog meer bestellen? (Y/N)")
+    if keuze == 'Y':
         stap1()
-    elif kies == 'N':
+    elif keuze == 'N':
         print("Bedankt en tot ziens!")
     else:
         print("Sorry dat snap ik niet...")
