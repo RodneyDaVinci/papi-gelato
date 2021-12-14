@@ -1,4 +1,4 @@
-print('Welkom bij Papi Gelato je mag alle smaken kiezen zolang het maar vanille ijs is.')
+print('Welkom bij Papi Gelato.')
 
 import time
 time.sleep(3)
@@ -6,6 +6,7 @@ time.sleep(3)
 # Dit is de hoofdcode van Papi Gelato
 def stap1():
     keuze = "" ""
+    taste = input("Welke smaak wilt u? Aardbei, Chocolade, Munt of Vanille? ")
     aantal = int(input("Hoeveel bolletjes wilt u? "))
     if aantal <= 3:
         stap2 = input(f"Wilt u deze {aantal} bolletje(s) in een hoorntje of een bakje? ")
@@ -15,7 +16,7 @@ def stap1():
     elif aantal > 8:
         print("Sorry, zulke grote bakken hebben we niet")
         stap1()
-    keuze = input(f"Hier is uw {stap2} met {aantal} bolletje(s). Wilt u nog meer bestellen? (Y/N)")
+    keuze = input(f"Hier is uw {stap2} met {aantal} bolletje(s) {taste}. Wilt u nog meer bestellen? (Y/N)")
     if keuze == 'Y':
         stap1()
     elif keuze == 'N':
