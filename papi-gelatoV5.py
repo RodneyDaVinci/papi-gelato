@@ -107,7 +107,7 @@ def stap1():
         if aantal <= 8:
             i = 1
             while i <= aantal:
-                taste = input('Welke smaak wilt u voor bolletje ' + str(i) + '? ')
+                taste = input('Welke smaak wilt u voor bolletje ' + str(i) + '? Aardbei, Chocolade, Vanille: ')
                 i += 1
         else:
             print('Sorry, zulke grote bakken hebben we niet')
