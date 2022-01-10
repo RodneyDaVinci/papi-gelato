@@ -20,7 +20,7 @@ def subtotaal2():
     
 
 # Subtotaal liters
-def TotaalL():
+def totaalL():
     print(f'Subtotaal: €{liter + prijsLiter}')
 
 # Betaald bedrag hoorntje bakje
