@@ -1,10 +1,10 @@
 # Prijslijst
-bolletjePrijs   = 1.10
+bolletjePrijs   = 0.95
 hoorntjePrijs = 1.25
 bakjePrijs   = 0.75
 stap2 = 0
 toppingsPrijs = 0
-belasting = 0.6
+belasting = 0.9
 i = 0
 particulier = False
 zaak = False
@@ -36,7 +36,7 @@ def betaald2():
 # Bon hoorntje hoorntje bakje
 def bon():	
     print('--------[Papi Gelato]--------')
-    print('Bolletjes:   '      + str(aantal) + ' x ' + '€1,10 '+ '= ' + '€' + str(format(subtotaalBol, '.2f'))   + ',-')
+    print('Bolletjes:   '      + str(aantal) + ' x ' + '€0.95 '+ '= ' + '€' + str(format(subtotaalBol, '.2f'))   + ',-')
     print('Horrentje:       €' + str(format(subtotaalHoorn, '.2f')) + ',-')
     print('Bakje:           €' + str(format(subtotaalBak, '.2f'))   + ',-')
     print('Topping:         €' + str(format(toppingsPrijs,     '.2f')) + ',-')
@@ -54,7 +54,7 @@ def bonL():
 # Bon bakje
 def bon2():
     print('--------[Papi Gelato]--------')
-    print('Bolletjes:   '      + str(aantal) + ' x ' + '€1,10 '+ '= ' + '€' + str(format(subtotaalBol, '.2f'))   + ',-')
+    print('Bolletjes:   '      + str(aantal) + ' x ' + '€0.95 '+ '= ' + '€' + str(format(subtotaalBol, '.2f'))   + ',-')
     print('Bakje:           €' + str(format(bakjePrijs, '.2f'))   + ',-')
     print('Topping:         €' + str(format(toppingsPrijs,     '.2f'))   + ',-')
     print('-----------------------------')
@@ -167,7 +167,7 @@ def stap1():
             tasteLiter = input('Welke smaak wilt u voor liter ' + str(i) + '? ')
             i += 1
         prijsLiter = liter * 9.80
-        belasting = (prijsLiter / 106) * 6
+        belasting = (prijsLiter / 109) * 9
         bonL()
     
     else:
