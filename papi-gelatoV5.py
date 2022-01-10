@@ -4,7 +4,7 @@ hoorntjePrijs = 1.25
 bakjePrijs   = 0.75
 stap2 = 0
 toppingsPrijs = 0
-belasting = 0.9
+belasting = 0.6
 i = 0
 particulier = False
 zaak = False
@@ -49,7 +49,7 @@ def bonL():
     print('--------[Papi Gelato]--------')
     print('Liter:   '      + str(liter) + ' x ' + '€9,80 '+ '= ' + '€' + str(format(prijsLiter, '.2f'))   + ',-')
     print('-----------------------------')
-    print('BTW (9%)' + str(format(belasting, '.2f')) + ',-')
+    print('BTW (6%)' + str(format(belasting, '.2f')) + ',-')
 
 # Bon bakje
 def bon2():
@@ -66,7 +66,7 @@ def bonL2():
     print('--------[Papi Gelato]--------')
     print('Liter:   '      + str(liter) + ' x ' + '€9,80 '+ '= ' + '€' + str(format(prijsLiter, '.2f'))   + ',-')
     print('-----------------------------')
-    print('BTW (9%)' + str(format(belasting, '.2f')) + ',-')
+    print('BTW (6%)' + str(format(belasting, '.2f')) + ',-')
 
 
     
@@ -167,7 +167,7 @@ def stap1():
             tasteLiter = input('Welke smaak wilt u voor liter ' + str(i) + '? ')
             i += 1
         prijsLiter = liter * 9.80
-        belasting = (prijsLiter / 109) * 9
+        belasting = (prijsLiter / 106) * 6
         bonL()
     
     else:
