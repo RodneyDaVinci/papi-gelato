@@ -78,7 +78,7 @@ def again():
     elif keuze == 'N':
         print('U kunt nu afrekenen.')
     else:
-        print('Sorry, dat snap ik niet...')
+        print('“Sorry dat is geen optie die we aanbieden...')
     bon()
 
 # Nog een keer bestellen bakje
@@ -122,7 +122,7 @@ def stap1():
             print('Sorry, zulke grote bakken hebben we niet')
             stap1()
         else:
-            print('Sorry, dat snap ik niet...')
+            print('“Sorry dat is geen optie die we aanbieden...')
             stap1()
         
         subtotaalBol = round(aantal * bolletjePrijs,2)
@@ -156,7 +156,7 @@ def stap1():
             else:
                 toppingsPrijs = 0.90
         else:
-            print('Sorry, dat snap ik niet...')
+            print('“Sorry dat is geen optie die we aanbieden...')
             stap1()
         bon()
     elif pofz == 'z':
@@ -171,7 +171,7 @@ def stap1():
         bonL()
     
     else:
-        print('Sorry, dat snap ik niet...')
+        print('“Sorry dat is geen optie die we aanbieden...')
         stap1()
 
 stap1()
